@@ -5,10 +5,10 @@ Gathered some Check_MK plugins from the internet: modified some for a better fun
 The plugins require to install check-mk-agent for check_mk server.
 Official documentation https://mathias-kettner.de/checkmk_linuxagent.html
 
+CentOS based install:
 ```yum install check-mk-agent```
 
 Also install xinetd to use the check_mk_agent
-
 ```yum install xinetd```
 
 Modify the file /etc/xinetd.d/check-mk-agent, here you can set the IP address of the monitoring server
