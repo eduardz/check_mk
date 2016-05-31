@@ -12,3 +12,4 @@ if which virsh >/dev/null; then
                 echo "$NAME" $NAME" "$STATE" "$CPU" "$MEM
         done
 fi
+
