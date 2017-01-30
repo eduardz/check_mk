@@ -9,8 +9,11 @@
 #
 # 2013-11-28 Stephan Helas
 #       - Patch to exit correctly
+#
+# 2017-01-30 Nokius
+#       - print output to /dev/null and remove wrong lines from agent
 
-if which nc && which memcached; then
+if which nc > /dev/null && which memcached > /dev/null ; then
     echo '<<<memcached>>>'
     echo "stats" | nc localhost 11211
 fi
